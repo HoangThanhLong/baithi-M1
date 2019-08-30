@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1340px" height="500px" style="border: 1px solid #000000;"></canvas>
+<script>
+    function MyRectangle(width, height) {
+        this.width = width;
+        this.height = height;
+        this.setWidth = function (width) {
+            this.width = width;
+        };
+        this.setHeight = function (height) {
+            this.height = height;
+        }
+    }
+    function VeRectangle() {
+        let rectangle = new MyRectangle(100, 200,);
+        let canvas = document.getElementById("myCanvas").getContext('2d');
+        canvas.beginPath();
+        canvas.rect(10, 10, rectangle.height, rectangle.width);
+        canvas.fillStyle = "#0000000";
+        canvas.fill();
+    }
+    VeRectangle();
+</script>
+</body>
+</html>

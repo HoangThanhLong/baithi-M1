@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n1 = 1;
+  let n2 = 1;
+  let n;
+  document.write(n1 + "<br>" + n2 + "<br>");
+  function printFibonaci(num) {
+      for (i = 0; i < num; i++){
+          n = n1 + n2;
+          n1 = n2;
+          n2 = n;
+          if (n < num){
+              document.write(n + "<br>");
+          }
+      }return n;
+  }
+  printFibonaci(25);
+</script>
+</body>
+</html>
